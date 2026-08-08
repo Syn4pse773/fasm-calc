@@ -15,7 +15,7 @@ macro write fd, buffer, size {
 		}
 start:
 		mov    	rax, 0
-		mov    	rdi, qword [fd]
+		mov    	rdi, 0
 		mov    	rsi, msgbuff
 		mov    	rdx, msgbuff_len
 		syscall
